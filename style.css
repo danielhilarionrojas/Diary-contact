@@ -1,0 +1,96 @@
+*,::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 75.5%;
+}
+
+body{
+    background-color: rgba(243, 245, 243, 0.8);
+    color: rgba(12, 9, 9, 0.9);
+}
+
+/*Elementos de la clase container*/
+.container{
+    height: 100vh;
+    width: 70vw;
+    margin: 5rem auto;
+}
+
+/*Elementos de la clase container que tengan etiqueta h2*/
+.container h2{ 
+    text-transform: uppercase; /*Texto de las etiquetas h2 en mayúsculas*/
+    text-align: center;
+    margin-bottom: 4rem; /*Espacio entre la etiqueta h2 y demas elementos*/
+    font-size: 2.3rem;
+}
+
+/*Elementos de la clase formulario*/
+.formulario{ 
+    display: block;
+    display: flex;
+    width: 70%;
+    margin: 1rem auto;
+    flex-direction: column; /*Ubicación de los elementos*/
+}
+
+/*Elementos de la calse formulario con etiquetas input*/
+.formulario input{ 
+    margin: 1rem 0rem;
+    line-height: 3rem;
+    background: none;
+    outline: 0; /*Sin contorno*/
+    border: 0; /*Sin borde*/
+    color: rgb(10, 9, 9);
+}
+
+/*Elementos de la calse formulario con etiquetas input con caracteristica activate
+  para cuando se vaya a usar*/
+.formulario input::activate{
+border-bottom: 500px  dodgerblue;
+}
+
+/*Elementos de la calse formulario con etiquetas input con caracteristica activate
+  para cuando se vaya a usar*/
+.formulario input:focus{
+    border-bottom: 1px solid rgb(255, 234, 0)
+    ;
+}
+
+/*Elementos de la calse formulario con etiquetas input*/
+.formulario button{
+    font-weight: bold; /*Peso o grueso del texto*/
+    margin: 2rem 0rem;
+    background-color: rgb(247, 248, 251);
+    border: 5;
+    border-color: black;
+    outline: 0;
+    height: 3rem;
+    border-radius: 5rem; /*Redondeo del boton*/
+    text-transform: uppercase;
+    color: rgb(10, 8, 8);
+}
+
+/*Elementos de la clase listado-productos*/
+.listado-productos{
+    display: flex; /*Ocupe el ancho del espacio*/
+    flex-direction: row; /*Orientación de los elementos*/
+}
+
+/*Elementos de la clase producto*/
+.producto{
+    display: flex; /*A lo ancho del espacio*/
+    flex-direction: row; /*Posición de los productos lsitados*/
+    justify-content: space-between; /*Justificar dentro del espacio*/
+    height: 4rem;
+}
+
+.icono{
+    color: tomato;
+    cursor: pointer;
+}
+

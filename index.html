@@ -1,0 +1,40 @@
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--usar iconos google-->
+    <link rel="stylesheet" href="style.css"> <!--conexión con css-->
+    <title>Bolsa</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <!--head-->
+        <h2>Carro de compras</h2>
+        <!--formulario de datos-->
+        <div class="formulario">
+
+            <input type="text" class="nombre" placeholder="Producto">
+            <input type="text" class="cantidad" placeholder="Cantidad">
+            <input type="text" class="referencia" placeholder="Referencia">
+
+            <button class="btn-agregar-producto">Agregar producto</button>
+
+            <!--listado de productos-->
+            <div class="listado-productos">
+                <div class="producto"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="functions.js"></script> <!--conexionfunctions.js--> 
+    <script src="main.js"></script> <!--conexion main.js-->
+    
+</body>
+</html>
